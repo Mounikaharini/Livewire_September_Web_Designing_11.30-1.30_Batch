@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: calibri;
+            font-size: 24px;
+            font-weight: 350;
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: #000000;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        nav ul li{
+            color: white;
+            font-size: 24px;
+            list-style-type: none;
+            margin: 10px; 
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: 350;
+        }
+        nav ul li ul{
+            height: 100px;
+            width: 200px;
+            background-color: black;
+            color: white;
+            display: none;
+            position: absolute;
+            /* top: 100%; */
+        }
+        nav li:hover>ul{
+            /* position: fixed; */
+            /* top: 50px; */
+            display: block;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="Product">Product</a>
+            <ul class="dropdown">
+                    <li><a href="Day8_Task1.html">Product Type 1</a></li>
+                    <li><a href="#">Product Type 2</a></li>
+                </ul></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

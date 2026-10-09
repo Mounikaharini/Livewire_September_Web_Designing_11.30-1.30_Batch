@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Google Sans", sans-serif;
+        }
+        header,section,footer{
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            background: url(image/bg.jpg);
+            background-size: cover;
+        }
+        nav {
+            height: 50px;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            margin-top: 20px;
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="home" id="home">
+        <nav>
+            <ul>
+                <li style="margin-top: 10px;">
+                    <h1>Mounika Harini G.</h1>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h1>Welcome to About Section</h1>
+    </section>
+    <section id="project">
+        <h1>Welcome to Projects Section</h1>
+    </section>
+    <section id="skill">
+        <h1>Welcome to Skills Section</h1>
+    </section>
+    <footer id="contact">
+        <h1>Welcome to Footer Section</h1>
+    </footer>
+</body>
+
+</html>

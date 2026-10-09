@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .overall{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .card {
+            height: 400px;
+            width: 280px;
+            background-color: black;
+            margin: 20px;
+        }
+
+        .card img {
+            /* border-radius: 50%; */
+            margin: 0px 30px;
+            margin-top: 30px;
+            width: 220px;
+            height: 250px;
+        }
+
+        .card h1 {
+            font-size: 24px;
+            color: white;
+            text-align: center;
+        }
+        .whiteLayer{
+            margin: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 210px;
+            width: 210px;
+            border: 3px solid rgb(4, 4, 4);
+            transition: transform 2s;
+        }
+        .whiteLayer:hover{
+             border: 3px solid rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.601);
+            transform:rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="overall">
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+        <div class="card">
+            <img src="image/img10.jpg" alt="">
+            <h1>Person 1</h1>
+            <h1>Person 1 Details</h1>
+        </div>
+
+    </div> -->
+<div>
+    <img src="image/img10.jpg" alt="" width="250" height="250" style="opacity: 0.75;">
+    <div class="whiteLayer"></div>
+</div>
+</body>
+
+</html>

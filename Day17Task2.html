@@ -1,0 +1,223 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+  1. onchange: Fires when the value changes and loses focus (or an option is selected)
+  <label for="city">Choose a city: </label>
+  <select id="city" onchange="handleChange(this.value)">
+    <option value="Salem">Salem</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Madurai">Madurai</option>
+  </select>
+
+  <br><br>
+
+  2. onclick: Fires when the user clicks the button
+  <button onclick="handleClick()">Click Me</button>
+
+  <br><br>
+
+  3. onmouseover & 4. onmouseout: Fires when the mouse enters and leaves the box
+  <div 
+    onmouseover="handleMouseOver(this)" 
+    onmouseout="handleMouseOut(this)" 
+    style="width: 200px; padding: 20px; background-color: lightgray; text-align: center;">
+    Hover over me
+  </div>
+
+  <p id="output"></p>
+
+  <script>
+    function handleChange(selectedValue) {
+      document.getElementById("output").innerText = "You selected: " + selectedValue;
+    }
+
+    function handleClick() {
+      alert("Button was clicked!");
+    }
+
+    function handleMouseOver(element) {
+      element.style.backgroundColor = "lightblue";
+      element.innerText = "Mouse is over!";
+    }
+
+    function handleMouseOut(element) {
+      element.style.backgroundColor = "lightgray";
+      element.innerText = "Hover over me";
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+  <label for="keyInput">Type something here: </label>
+  <input 
+    type="text" 
+    id="keyInput" 
+    onkeydown="handleKeyDown(event)" 
+    onkeypress="handleKeyPress(event)" 
+    onkeyup="handleKeyUp(event)">
+
+  <p id="downLog">Key Down: </p>
+  <p id="pressLog">Key Press: </p>
+  <p id="upLog">Key Up: </p>
+
+  <script>
+    // 1. Fires first, the moment any key is pressed down
+    function handleKeyDown(event) {
+      document.getElementById("downLog").innerText = "Key Down: " + event.key;
+    }
+
+    // 2. Fires second, only for keys that produce a character (letters, numbers, symbols)
+    function handleKeyPress(event) {
+      document.getElementById("pressLog").innerText = "Key Press: " + event.key;
+    }
+
+    // 3. Fires last, when the key is released
+    function handleKeyUp(event) {
+      document.getElementById("upLog").innerText = "Key Up: " + event.key;
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+  onsubmit: Fires when the user clicks the Submit button or presses Enter
+  <form onsubmit="handleSubmit(event)">
+    
+    onfocus & onblur: Fire when clicking inside and outside the input box
+    <label for="username">Username: </label>
+    <input 
+      type="text" 
+      id="username" 
+      onfocus="handleFocus(this)" 
+      onblur="handleBlur(this)"
+      required>
+
+    <br><br>
+
+    onchange: Fires when the dropdown selection is changed
+    <label for="role">Role: </label>
+    <select id="role" onchange="handleChange(this.value)">
+      <option value="Student">Student</option>
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Submit Form</button>
+  </form>
+
+  <p id="status"></p>
+
+  <script>
+    // I. onfocus: Highlights the input box when it becomes active
+    function handleFocus(element) {
+      element.style.backgroundColor = "blue";
+    }
+
+    // III. onblur: Resets the background and checks input when leaving the box
+    function handleBlur(element) {
+      element.style.backgroundColor = "black";
+      document.getElementById("status").innerText = "Left username field.";
+    }
+
+    // IV. onchange: Updates text when a new dropdown option is picked
+    function handleChange(value) {
+      document.getElementById("status").innerText = "Role changed to: " + value;
+    }
+
+    // II. onsubmit: Validates or processes the form before submission
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevents the page from refreshing
+      const user = document.getElementById("username").value;
+      alert("Form submitted for: " + user);
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+1. onload & 2. onresize attached to the body/window
+<body onload="handleLoad()" onresize="handleResize()">
+
+  <h2>Window Events Example</h2>
+  <p id="loadStatus">Loading...</p>
+  <p id="sizeStatus">Resize the browser window to see dimensions.</p>
+
+  <script>
+    // 1. onload: Fires once the entire page (HTML, CSS, images) has finished loading
+    function handleLoad() {
+      document.getElementById("loadStatus").innerText = "Page has completely loaded!";
+      updateDimensions(); // Display initial window size on load
+    }
+
+    // 2. onresize: Fires continuously whenever the browser window is resized
+    function handleResize() {
+      updateDimensions();
+    }
+
+    function updateDimensions() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      document.getElementById("sizeStatus").innerText = 
+        "Window Width: " + width + "px, Height: " + height + "px";
+    }
+  </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const z = ['a', 'b', 'c', 'd'];
+        // const output = z[Symbol.iterator]();
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // document.write(JSON.stringify(output.next()));
+        // const z = ['a', 'b', 'c', 'd'];
+        // const output = z[Symbol.iterator]()
+        // for (let out of output) {
+        //     document.write(out);
+        // }
+
+        const z = ['a', 'b', 'c', 'd'];
+
+        function* anup() {
+            yield 10;
+            yield* z;
+            yield 30;
+        }
+        for (let output of anup()) {
+            document.write(output);
+        }
+    </script>
+</body>
+
+</html>

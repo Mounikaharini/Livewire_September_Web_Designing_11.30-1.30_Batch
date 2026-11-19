@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .style1 {
+            color: rgb(114, 3, 75);
+            background-color: rgb(255, 234, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>Hello</h1>
+    <button id="hide">click hide</button>
+    <button id="show">click show</button>
+
+    <script>
+        $(document).ready(function (){
+            $("#hide").click(function(){
+                $("h1").hide();
+            });
+            $("#show").click(function(){
+                $("h1").show();
+            });
+        });
+    </script> -->
+
+
+    <!-- <h1 class="data">Hello<b><i>World</i></b></h1>
+    <script>
+        $(document).ready(function () {
+            // document.write("Text : "+$(".data").text());
+            // alert("Text : "+$(".data").text());
+        });
+        $(document).ready(function(){
+        //     document.write("Text : "+$(".data").html());
+        //  alert("Text : "+$(".data").html());
+        });
+    </script> -->
+
+    <!-- <script src="jquery.js"></script> -->
+
+    <!-- <p></p>
+    <select id="single">
+        <option>Single1</option>
+        <option>Single2</option>
+    </select>
+    <select id="multiple" multiple="multiple">
+        <option>Multiple1</option>
+        <option>Multiple2</option>
+        <option>Multiple3</option>
+    </select>
+    <script>
+        function displayVals() {
+            var singleValues = $("#single").val();
+            var multipleValues = $("#multiple").val();
+            $("p").html("<b>Single:</b> " 
+            + singleValues +
+            " <b>Multiple:</b> " + 
+            multipleValues.join(", "));
+        } $("select").on("change", displayVals);
+        displayVals();
+    </script> -->
+
+    <!-- <input id="check1" type="checkbox" checked="checked">
+    <label for="check1">Check me</label>
+    <p></p>
+    <script>
+        $("input").on("change", function () {
+            var $input = $(this);
+            $("p").html($input.is(":checked"));
+        }).trigger("change");
+    </script> -->
+
+    <!-- <h1>Hello World</h1>
+    <button id="add">Add Css</button>
+    <button id="remove">Remove Css</button>
+    <button id="toggle">Both</button>
+
+    <h2 id="a">Hello</h2>
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                $("h1").addClass("style1");
+            });
+        });
+        $(document).ready(function(){
+            $("#remove").click(function(){
+                $("h1").removeClass("style1");
+            });
+        });
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("h1").toggleClass("style1");
+            });
+        });
+        $(document).add("#a").css("border","2px solid red")
+    </script> -->
+
+    <!-- <p>Hello</p>
+    <button>Click to hide me too</button>
+    <p>Here is another paragraph</p>
+    <script>
+        $("button").on("click", function () {
+            $("p").toggle();
+        });
+    </script> -->
+
+    <!-- <p>hello World</p>
+    <button class="btn1">btn 1</button>
+    <button class="btn2">btn 2</button>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("p").fadeOut(5000);
+            });
+            $(".btn2").click(function () {
+                $("p").fadeIn();
+            });
+        });
+    </script> -->
+
+    <button id="down">Slide down</button>
+    <button id="up">Slide Up</button>
+    <button id="toggle">Toggle</button>
+    <p style="display: none;">
+        This is the paragraph to end all paragraphs. You
+        should feel <em>lucky</em> to have seen such a paragraph in
+        your life. Congratulations......</p>
+    <script>
+        $("#down").on("click", function () {
+            $("p").slideDown("slow");
+        });
+        $("#up").on("click", function () {
+            $("p").slideUp("slow");
+        });
+        $("#toggle").on("click", function () {
+            $("p").slideToggle("slow");
+        });
+    </script>
+</body>
+
+</html>
